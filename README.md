@@ -46,7 +46,7 @@ PLYRestClient client = new PLYRestClient(config);
 Product foundProduct = ProductService.getProductForGtin(client, "0888462563369", "de", false, null);
 ```
 
- - ConsoleClient - A simple console client to request product infos from the productlayer API
+ - [ConsoleClient](https://github.com/ProductLayer/ProductLayer-SDK-for-Java/blob/develop/src/main/java/com/productlayer/examples/console/ConsoleClient.java) - A simple console client to request product infos from the productlayer API
 
 
 Apps using this SDK
