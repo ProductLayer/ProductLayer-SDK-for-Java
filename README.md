@@ -28,7 +28,7 @@ git clone https://github.com/ProductLayer/ProductLayer-SDK-for-Java.git
 	</dependency>
 
 -----
-#### Get a api-key
+#### Get an api-key
 https://developer.productlayer.com
 
 ----
@@ -47,9 +47,3 @@ Product foundProduct = ProductService.getProductForGtin(client, "0888462563369",
 ```
 
  - [ConsoleClient](https://github.com/ProductLayer/ProductLayer-SDK-for-Java/blob/develop/src/main/java/com/productlayer/examples/console/ConsoleClient.java) - A simple console client to request product infos from the productlayer API
-
-
-Apps using this SDK
--------------------
-
-We love to highlight apps using the ProductLayer SDK. The first app using it is prod.ly the [official client app for the prod.ly social network](https://prod.ly/app/).

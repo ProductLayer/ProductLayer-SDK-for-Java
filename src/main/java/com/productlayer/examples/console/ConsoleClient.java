@@ -26,6 +26,8 @@ public class ConsoleClient {
      * @throws JsonProcessingException Exception if the POJO couldn't be converted to a human readable JSON-String representation.
      */
     public static void main(String[] args) throws JsonProcessingException {
+        
+        // initialise the config
         PLYRestClientConfig config = new PLYRestClientConfig("https", "api.productlayer.com", 80, "0.5", "<API_KEY>", false, null, 0);
         
         HashMap<String, String> searchParameter = new HashMap<String, String>();
@@ -156,14 +158,18 @@ public class ConsoleClient {
             }
         }
         
+        // check if the api key is present
         if(config.apiKey.equalsIgnoreCase("<API_KEY>")) {
             printHelp("--api_key is missing");
             return;
         }
         
+        // create the productlayer client
         PLYRestClient client = new PLYRestClient(config);
         
         long startTime = new Date().getTime();
+        
+        // request products matching the search criteria 
         Product[] products = ProductService.searchProducts(client, 
                 searchParameter.get("query"), 
                 (searchParameter.containsKey("page") ? Integer.getInteger(searchParameter.get("page")) : 0),
@@ -180,9 +186,9 @@ public class ConsoleClient {
         
         long requestDuration = new Date().getTime() - startTime;
         
+        // print the results to the console.
         ObjectMapper mapper = new ObjectMapper();
         mapper.setSerializationInclusion(Include.NON_EMPTY);
-        
         System.out.println("Found " + products.length + " products in " + convertToTimeString(requestDuration));
         System.out.println("---------------------------------------");
         System.out.println("");
