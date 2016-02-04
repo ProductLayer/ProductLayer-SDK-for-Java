@@ -1,9 +1,9 @@
 ProductLayer SDK for Java
 ========================
 
-<div style="text-align:center"><img src="https://dl.dropboxusercontent.com/u/768123/logo.png" height="256" width="256" ></div>
+![productlayer logo](https://prod.ly/images/logo_256x175.png)
 
-The ultimate product information API, enabling a new breed of [product-centric apps](http://www.cocoanetics.com/2014/02/from-barcodes-to-productlayer/). This is the Java SDK for it (iOS SDK can be found [here](https://github.com/ProductLayer/ProductLayer-SDK-for-iOS)). It is Open Source so that you can see how easy it is to use it in your own apps.
+The ultimate product information API, enabling a new breed of [product-centric apps](http://www.cocoanetics.com/2014/02/from-barcodes-to-productlayer/). This is the Java SDK. We also provide SDKs for [Android](https://github.com/ProductLayer/ProductLayer-SDK-for-Android) and [iOS](https://github.com/ProductLayer/ProductLayer-SDK-for-iOS).
 
  - [prod.ly web](https://prod.ly)
  - [prod.ly android](https://play.google.com/store/apps/details?id=com.productlayer.prodly)
